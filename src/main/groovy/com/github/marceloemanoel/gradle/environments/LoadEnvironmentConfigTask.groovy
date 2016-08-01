@@ -9,7 +9,6 @@ class LoadEnvironmentConfigTask extends DefaultTask {
     String description = "Reads information from file env-properties.groovy and stores in the environment property"
     
     LoadEnvironmentConfigTask(){
-        dependsOn("selectEnvironment")
     }
     
     def File configFile() {
