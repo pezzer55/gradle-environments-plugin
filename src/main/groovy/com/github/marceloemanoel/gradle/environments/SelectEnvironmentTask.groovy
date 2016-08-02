@@ -1,5 +1,4 @@
 package com.github.marceloemanoel.gradle.environments
-
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 

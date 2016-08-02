@@ -17,9 +17,9 @@ class LoadEnvironmentConfigTask extends DefaultTask {
     
     @TaskAction
     def loadEnvironmentConfig() {
-        project.ext.config = new ConfigSlurper(project.environment).parse(configFile().toURL())
+        project.ext.environment = new ConfigSlurper().parse(configFile().toURL()).environment
         logger.info("Configuration values: ")
-        logger.info(project.ext.config.toString())
+        logger.info(project.ext.environment.toString())
     }
 
 }
